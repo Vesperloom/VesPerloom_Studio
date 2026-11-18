@@ -1,0 +1,17 @@
+name: Model profile request
+description: Propose a version-pinned model for the registry.
+title: "[Registry] "
+body:
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream model card and immutable revision
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Architecture, license, hardware and verification plan
+      description: Link the original license. Do not attach checkpoint weights.
+    validations:
+      required: true

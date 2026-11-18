@@ -1,0 +1,23 @@
+services:
+  studio:
+    build:
+      context: .
+      args:
+        WITH_LOCAL_CHAT: ${WITH_LOCAL_CHAT:-0}
+    init: true
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4173:4173"
+    volumes:
+      - studio-data:/data
+    environment:
+      VESPER_CHAT_BASE_URL: ${VESPER_CHAT_BASE_URL:-}
+      VESPER_CHAT_MODEL: ${VESPER_CHAT_MODEL:-}
+      VESPER_CHAT_API_KEY: ${VESPER_CHAT_API_KEY:-}
+      VESPER_TOKEN: ${VESPER_TOKEN:-}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+volumes:
+  studio-data:

@@ -1,0 +1,53 @@
+{
+  "name": "vesperloom",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-hosted image, video and chat studio with private workspaces and verified model snapshots.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10"
+  },
+  "bin": {
+    "vesperloom": "./bin/loom.mjs"
+  },
+  "scripts": {
+    "start": "npm run build && node server/main.mjs",
+    "serve": "node server/main.mjs",
+    "build": "npm run lab:build && vite build --config app/vite.config.mjs",
+    "dev": "node tools/dev.mjs",
+    "loom": "node bin/loom.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "studies": "node tools/make-studies.mjs",
+    "format": "prettier --write \"{app/src,community,seed-lab,server,registry,engine,runtimes,bin,tools,tests}/**/*.{js,jsx,mjs,css}\"",
+    "format:check": "prettier --check \"{app/src,community,seed-lab,server,registry,engine,runtimes,bin,tools,tests}/**/*.{js,jsx,mjs,css}\"",
+    "bench": "node tools/benchmark.mjs",
+    "registry:check": "node tools/check-registry.mjs",
+    "test:browser": "npm run build && node tests/studio.browser.mjs && node tests/seed-lab.browser.mjs && node tests/multimodal.browser.mjs",
+    "lab:build": "node tools/build-seed-lab.mjs",
+    "build:pages": "node tools/build-seed-lab.mjs --pages",
+    "community:setup": "node tools/community-setup.mjs",
+    "chat:setup": "node tools/setup-chat.mjs",
+    "workspace": "node tools/workspaces.mjs",
+    "motion:study": "node tools/make-motion-study.mjs",
+    "test:chat": "node tests/local-chat.smoke.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@jsquash/webp": "1.5.0",
+    "h264-mp4-encoder": "1.0.12",
+    "lucide-react": "0.468.0",
+    "pngjs": "7.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "esbuild": "0.25.12",
+    "playwright": "1.56.1",
+    "prettier": "3.6.2",
+    "vite": "6.4.6"
+  }
+}

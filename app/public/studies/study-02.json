@@ -1,0 +1,34 @@
+{
+  "schema": "vesperloom.capsule/v1",
+  "engineVersion": "0.1.0",
+  "model": {
+    "id": "strata-1",
+    "revision": "1.0.0",
+    "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+  },
+  "settings": {
+    "prompt": "Glacial peaks rise beneath a pale mint moon, in a quiet alpine sky.",
+    "model": "strata-1",
+    "aspect": "3:2",
+    "seed": 371907,
+    "steps": 24,
+    "drift": 0,
+    "width": 960,
+    "height": 640
+  },
+  "tags": {
+    "family": "alpine",
+    "palette": "fjord",
+    "ringed": false,
+    "starry": false,
+    "largeBody": false
+  },
+  "parent": null,
+  "elapsedMs": 0,
+  "output": {
+    "width": 960,
+    "height": 640,
+    "pixelSha256": "778f4e43ba683459d1ca63fbc09df61d841117c8d74bcbe8125dbe8df8d4f60e",
+    "pngSha256": "76d12cb3db3d9f75ced8003645c181f0a7d6e1d26f39b58562c0358f5eaf9f59"
+  }
+}

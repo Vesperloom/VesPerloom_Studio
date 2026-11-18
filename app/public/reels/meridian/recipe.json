@@ -1,0 +1,47 @@
+{
+  "schema": "vesperloom.motion/v1",
+  "renderer": "1.0.0",
+  "settings": {
+    "modality": "video",
+    "model": "strata-motion",
+    "prompt": "An immense ringed planet above sweeping copper desert dunes, with amber light and a plum dusk sky.",
+    "seed": 41928,
+    "frame": "wide",
+    "camera": "glide",
+    "strength": 85,
+    "drift": 0,
+    "steps": 24,
+    "duration": 3,
+    "size": "preview",
+    "width": 512,
+    "height": 288,
+    "fps": 12,
+    "frames": 36
+  },
+  "model": {
+    "id": "strata-1",
+    "revision": "1.0.0",
+    "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+  },
+  "tags": {
+    "family": "dunes",
+    "palette": "copper",
+    "ringed": true,
+    "starry": false,
+    "largeBody": true
+  },
+  "parent": "study-01",
+  "elapsedMs": 5869,
+  "output": {
+    "codec": "h264",
+    "container": "mp4",
+    "frames": 36,
+    "fps": 12,
+    "seconds": 3,
+    "width": 512,
+    "height": 288,
+    "bytes": 79673,
+    "pixelStreamSha256": "72ec4dadcd428ac4eaa090ad63c79afc6c6c8bd28e07d142845ebe9f73683d24",
+    "sha256": "26c221e8186cb1be72f12bba8ee2eaab035be9dbb426d8a179cb0b6a4f19a534"
+  }
+}

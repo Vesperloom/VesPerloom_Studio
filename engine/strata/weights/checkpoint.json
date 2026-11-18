@@ -1,0 +1,69 @@
+{
+  "format": "strata-mlp-v1",
+  "version": "1.0.0",
+  "features": [
+    "body_x",
+    "body_y",
+    "body_size",
+    "horizon",
+    "height",
+    "frequency",
+    "azimuth",
+    "spacing",
+    "valley",
+    "flow",
+    "erosion",
+    "plateau",
+    "sea_level",
+    "veil",
+    "haze",
+    "sunlight",
+    "contours",
+    "grain",
+    "body_detail",
+    "chroma"
+  ],
+  "families": [
+    "dunes",
+    "alpine",
+    "tidal",
+    "orbital"
+  ],
+  "activation": "silu",
+  "layers": [
+    {
+      "file": "condition.f32",
+      "shape": [
+        34,
+        96
+      ],
+      "sha256": "b5f182f53860730337349f182875c4c1b87d71a5f8032c4c03b75363d0a88c4b"
+    },
+    {
+      "file": "hidden.f32",
+      "shape": [
+        96,
+        96
+      ],
+      "sha256": "f60efd031c556dc1ef56fc00b6e198456d56a71c921737c8411dee361e403b1f"
+    },
+    {
+      "file": "epsilon.f32",
+      "shape": [
+        96,
+        20
+      ],
+      "sha256": "d4d9d3c47bb49a6fa2a740d156a9f70af1f730c57d1cc50c8ceac315d208007a"
+    }
+  ],
+  "parameters": 14612,
+  "training": {
+    "seed": 72891,
+    "steps": 4200,
+    "batch": 128,
+    "validation_seed": 5017,
+    "validation_examples": 4096,
+    "epsilon_mse": 0.249997,
+    "zero_predictor_mse": 1.00499
+  }
+}

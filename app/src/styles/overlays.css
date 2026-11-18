@@ -1,0 +1,161 @@
+/* Portable overlays and feedback */
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: #050809ba;
+  backdrop-filter: blur(7px);
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.dialog {
+  max-height: 90vh;
+  overflow: auto;
+  width: min(440px, 100%);
+  background: #1b1f20;
+  border: 1px solid #3c433d;
+  border-radius: 12px;
+  box-shadow: 0 24px 100px #0008;
+  padding: 21px;
+  outline: none;
+}
+.dialog.wide {
+  width: min(870px, 100%);
+}
+.dialog header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 14px;
+}
+.dialog h2 {
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 1.35;
+}
+.dialog .eyebrow {
+  margin-bottom: 5px;
+}
+.dialog-copy {
+  margin: 0 0 13px;
+}
+.export-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid var(--line2);
+  border-radius: 7px;
+  padding: 12px 13px;
+  text-align: left;
+  margin-top: 9px;
+  background: #161a19;
+}
+.export-row > svg:first-child {
+  color: var(--lime);
+  width: 19px;
+}
+.export-row b,
+.export-row small {
+  display: block;
+}
+.export-row b {
+  font-size: 13px;
+}
+.export-row small {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.export-row > svg:last-child {
+  margin-left: auto;
+  color: var(--muted);
+}
+.export-row:hover {
+  border-color: #677959;
+}
+.inspected-image {
+  display: block;
+  width: 100%;
+  max-height: 64vh;
+  object-fit: contain;
+  background: #101313;
+  border-radius: 4px;
+}
+.inspector-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  font: 10px var(--mono);
+  color: var(--muted);
+}
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: calc(50% + 85px);
+  transform: translateX(-50%);
+  max-width: calc(100% - 30px);
+  background: #2b3328;
+  border: 1px solid #516347;
+  color: #e4eddd;
+  box-shadow: 0 6px 30px #0005;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  font-size: 12px;
+  z-index: 40;
+}
+.toast > svg {
+  color: var(--lime);
+}
+.toast button {
+  color: #b1bbab;
+}
+.error-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #ffc1b2;
+  padding: 10px;
+  border: 1px solid #67443d;
+  border-radius: 6px;
+  background: #30201e;
+  margin-top: 10px;
+  overflow-wrap: anywhere;
+}
+.login {
+  max-width: 390px;
+  margin: 12vh auto;
+  padding: 25px;
+}
+.login h1 {
+  font-size: 30px;
+  margin: 16px 0 8px;
+}
+.login form {
+  margin-top: 22px;
+}
+.login input {
+  border: 1px solid var(--line2);
+  background: var(--card);
+  border-radius: 6px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+.spin {
+  animation: spin 1.3s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

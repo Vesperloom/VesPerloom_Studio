@@ -1,0 +1,25 @@
+name: Optional tensor adapter
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  tensor-fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -r engine/adapters/requirements.txt
+      - run: python tests/adapter_smoke.py
+        env:
+          OMP_NUM_THREADS: '1'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: python tests/video_adapter_smoke.py --encode
+        env:
+          OMP_NUM_THREADS: '1'
+          HF_HUB_OFFLINE: '1'

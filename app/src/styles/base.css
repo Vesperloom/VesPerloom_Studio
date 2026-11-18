@@ -1,0 +1,85 @@
+:root {
+  color-scheme: dark;
+  --bg: #101213;
+  --rail: #151718;
+  --card: #191c1d;
+  --input: #121516;
+  --line: #2c3031;
+  --line2: #383d3d;
+  --fg: #eef0eb;
+  --muted: #a3aaa7;
+  --quiet: #89918e;
+  --lime: #c5f58f;
+  --ink: #1c2b14;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --sans: 'Manrope Variable', Arial, sans-serif;
+  font: 14px/1.5 var(--sans);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+button:disabled,
+fieldset:disabled button {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 3px;
+}
+button {
+  transition:
+    background 0.14s,
+    color 0.14s,
+    border-color 0.14s,
+    transform 0.14s;
+}
+svg {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+button:disabled:hover {
+  transform: none;
+}
+::selection {
+  background: #859e63;
+  color: #111;
+}

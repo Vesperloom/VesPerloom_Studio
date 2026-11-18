@@ -1,0 +1,34 @@
+{
+  "schema": "vesperloom.capsule/v1",
+  "engineVersion": "0.1.0",
+  "model": {
+    "id": "strata-1",
+    "revision": "1.0.0",
+    "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+  },
+  "settings": {
+    "prompt": "A massive lilac moon over a violet tidal sea, under a scattering of stars.",
+    "model": "strata-1",
+    "aspect": "3:2",
+    "seed": 692104,
+    "steps": 24,
+    "drift": 0,
+    "width": 960,
+    "height": 640
+  },
+  "tags": {
+    "family": "tidal",
+    "palette": "iris",
+    "ringed": false,
+    "starry": true,
+    "largeBody": true
+  },
+  "parent": null,
+  "elapsedMs": 0,
+  "output": {
+    "width": 960,
+    "height": 640,
+    "pixelSha256": "a3c000842649c3a669c67e88346dc47819680439f5a94a6acafad0373728f42b",
+    "pngSha256": "230c14c1cb5caf562b753d1d5880919699c8c3940bc1bf8e145ddfa23bd360d0"
+  }
+}

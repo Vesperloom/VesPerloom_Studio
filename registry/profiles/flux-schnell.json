@@ -1,0 +1,134 @@
+{
+  "id": "flux-schnell",
+  "name": "FLUX.1 Schnell",
+  "publisher": "Black Forest Labs",
+  "kind": "external",
+  "architecture": "flux",
+  "repo": "black-forest-labs/FLUX.1-schnell",
+  "revision": "741f7c3ce8b383c54771c7003378a50191e9efe9",
+  "variant": null,
+  "license": "Apache-2.0",
+  "base": 1024,
+  "steps": 4,
+  "maxSteps": 4,
+  "guidance": 0,
+  "vram": "24+ GB",
+  "bytes": 33725923002,
+  "files": [
+    {
+      "path": "model_index.json",
+      "size": 536,
+      "gitBlob": "f2dcd899e03be059304cc980a87bb9389008ba2f"
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "size": 274,
+      "gitBlob": "0bdb1b0ee10b0b31745d2654369613d432dc297a"
+    },
+    {
+      "path": "text_encoder/config.json",
+      "size": 613,
+      "gitBlob": "5ebd923ce51522c605f64ab3d26ea024672777b6"
+    },
+    {
+      "path": "text_encoder/model.safetensors",
+      "size": 246144352,
+      "gitLfsPointerBlob": "40a62c5746d88a2483eb10db5ef38d12c5b6b893"
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "size": 782,
+      "gitBlob": "b00a8a6908682a2091f1194b81f220fd2b67c41c"
+    },
+    {
+      "path": "text_encoder_2/model-00001-of-00002.safetensors",
+      "size": 4994582224,
+      "gitLfsPointerBlob": "fb543745ed2f4aa1105e3a8f97ff89a6ff7b5662"
+    },
+    {
+      "path": "text_encoder_2/model-00002-of-00002.safetensors",
+      "size": 4530066360,
+      "gitLfsPointerBlob": "c1596ab4886c9962503f01891b16715d1469fbe5"
+    },
+    {
+      "path": "text_encoder_2/model.safetensors.index.json",
+      "size": 19885,
+      "gitBlob": "c8728bc3dca59d2616a2a594cbac3ddb9eb77d5b"
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "size": 524619,
+      "gitBlob": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "size": 588,
+      "gitBlob": "cf0682d6de72c1547f41b4f6d7c59f62deffef94"
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "size": 705,
+      "gitBlob": "180a4e1be2a7d0b38a44108d6f24f585f35147b1"
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "size": 1059962,
+      "gitBlob": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "size": 2543,
+      "gitBlob": "17ade346a1042cbe0c1436f5bedcbd85c099d582"
+    },
+    {
+      "path": "tokenizer_2/spiece.model",
+      "size": 791656,
+      "gitLfsPointerBlob": "317a5ccbde45300f5d1d970d4d449af2108b147e"
+    },
+    {
+      "path": "tokenizer_2/tokenizer.json",
+      "size": 2424235,
+      "gitBlob": "21ed409afa3df5a822caa0fd5da30d13941f90b5"
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "size": 20817,
+      "gitBlob": "b336fa236135e6c87e246485e4d69e415cc57da0"
+    },
+    {
+      "path": "transformer/config.json",
+      "size": 321,
+      "gitBlob": "67e7b3526946734ed5f9014dc8fc2557714cce3e"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00001-of-00003.safetensors",
+      "size": 9962580296,
+      "gitLfsPointerBlob": "3fb8b5b0d42168e838789f7383cd97da182def52"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00002-of-00003.safetensors",
+      "size": 9949328904,
+      "gitLfsPointerBlob": "46b7fbb191fa0dd8a5e27185e2a81ea43d6719ae"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model-00003-of-00003.safetensors",
+      "size": 3870584832,
+      "gitLfsPointerBlob": "00e0f05ca7db329a52706bc7b9b63f6692e17009"
+    },
+    {
+      "path": "transformer/diffusion_pytorch_model.safetensors.index.json",
+      "size": 120822,
+      "gitBlob": "bf1b236a5e90a3e5ffc62c916914d3696ad276e7"
+    },
+    {
+      "path": "vae/config.json",
+      "size": 774,
+      "gitBlob": "b43183d0f5f0274bccd8054cd0069fc1d5f64586"
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.safetensors",
+      "size": 167666902,
+      "gitLfsPointerBlob": "3557b83a132d75a1f71bde9963021e667b1a0d2d"
+    }
+  ]
+}

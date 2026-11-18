@@ -1,0 +1,94 @@
+{
+  "id": "sd15",
+  "name": "Stable Diffusion 1.5",
+  "publisher": "Stable Diffusion v1.5",
+  "kind": "external",
+  "architecture": "sd15",
+  "repo": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "variant": "fp16",
+  "license": "CreativeML Open RAIL-M",
+  "base": 512,
+  "steps": 24,
+  "maxSteps": 50,
+  "guidance": 7.5,
+  "vram": "4\u20136 GB",
+  "bytes": 2742217630,
+  "files": [
+    {
+      "path": "feature_extractor/preprocessor_config.json",
+      "size": 342,
+      "gitBlob": "5294955ff7801083f720b34b55d0f1f51313c5c5"
+    },
+    {
+      "path": "model_index.json",
+      "size": 541,
+      "gitBlob": "daf7e2e2dfc64fb437a2b44525667111b00cb9fc"
+    },
+    {
+      "path": "safety_checker/config.json",
+      "size": 4723,
+      "gitBlob": "5dbd88952e7e521aa665e5052e6db7def3641d03"
+    },
+    {
+      "path": "safety_checker/model.fp16.safetensors",
+      "size": 608018440,
+      "sha256": "08902f19b1cfebd7c989f152fc0507bef6898c706a91d666509383122324b511"
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "size": 308,
+      "gitBlob": "82d05b0e688d7ea94675678646c427907419346e"
+    },
+    {
+      "path": "text_encoder/config.json",
+      "size": 617,
+      "gitBlob": "4d3e873ab5086ad989f407abd50fdce66db8d657"
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "size": 246144864,
+      "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e"
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "size": 524619,
+      "gitBlob": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "size": 472,
+      "gitBlob": "2c2130b544c0c5a72d5d00da071ba130a9800fb2"
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "size": 806,
+      "gitBlob": "5ba7bf706515bc60487ad0e1816b4929b82542d6"
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "size": 1059962,
+      "gitBlob": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+    },
+    {
+      "path": "unet/config.json",
+      "size": 743,
+      "gitBlob": "1a02ee8abc93e840ffbcb2d68b66ccbcb74b3ab3"
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "size": 1719125304,
+      "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21"
+    },
+    {
+      "path": "vae/config.json",
+      "size": 547,
+      "gitBlob": "55d78924fee13e4220f24320127c5f16284e13b9"
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "size": 167335342,
+      "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema", "title":"Vesperloom curated image profile", "type":"object",
+  "required":["id","name","publisher","kind","architecture","license","base","steps","maxSteps","bytes"],
+  "properties":{"id":{"type":"string","pattern":"^[a-z0-9-]+$"},"name":{"type":"string"},"publisher":{"type":"string"},"kind":{"enum":["native","external"]},"architecture":{"enum":["scene-ddim","sd15","sdxl","flux"]},"license":{"type":"string"},"revision":{"type":"string","pattern":"^[a-f0-9]{40}$"},"base":{"type":"integer"},"steps":{"type":"integer","minimum":1},"maxSteps":{"type":"integer","minimum":1},"bytes":{"type":"integer","minimum":1},"files":{"type":"array","items":{"type":"object","required":["path","size"],"properties":{"path":{"type":"string"},"size":{"type":"integer","minimum":0},"sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"},"gitBlob":{"type":"string","pattern":"^[a-f0-9]{40}$"},"gitLfsPointerBlob":{"type":"string","pattern":"^[a-f0-9]{40}$"}},"oneOf":[{"required":["sha256"]},{"required":["gitBlob"]},{"required":["gitLfsPointerBlob"]}]}}},
+  "if":{"properties":{"kind":{"const":"external"}}},"then":{"required":["repo","revision","files","guidance","variant"]}
+}

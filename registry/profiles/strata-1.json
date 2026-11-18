@@ -1,0 +1,13 @@
+{
+  "id": "strata-1",
+  "name": "Strata-1",
+  "publisher": "Vesperloom",
+  "kind": "native",
+  "architecture": "scene-ddim",
+  "license": "MIT",
+  "base": 768,
+  "steps": 24,
+  "maxSteps": 48,
+  "vram": "CPU only",
+  "bytes": 58448
+}

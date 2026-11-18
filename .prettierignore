@@ -1,0 +1,9 @@
+node_modules
+app/dist
+.vesperloom
+package-lock.json
+*.md
+registry/profiles
+registry/studies.json
+engine/strata/weights
+app/public

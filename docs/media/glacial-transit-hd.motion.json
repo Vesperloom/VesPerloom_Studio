@@ -1,0 +1,47 @@
+{
+  "schema": "vesperloom.motion/v1",
+  "renderer": "1.0.0",
+  "settings": {
+    "modality": "video",
+    "model": "strata-motion",
+    "prompt": "A glacial moon above alpine peaks in cobalt light",
+    "seed": 2026,
+    "frame": "wide",
+    "camera": "arc",
+    "strength": 65,
+    "drift": 0,
+    "steps": 24,
+    "duration": 2,
+    "size": "hd",
+    "width": 1280,
+    "height": 720,
+    "fps": 24,
+    "frames": 48
+  },
+  "model": {
+    "id": "strata-1",
+    "revision": "1.0.0",
+    "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+  },
+  "tags": {
+    "family": "alpine",
+    "palette": "fjord",
+    "ringed": false,
+    "starry": false,
+    "largeBody": false
+  },
+  "parent": null,
+  "elapsedMs": 33415,
+  "output": {
+    "codec": "h264",
+    "container": "mp4",
+    "frames": 48,
+    "fps": 24,
+    "seconds": 2,
+    "width": 1280,
+    "height": 720,
+    "bytes": 1443888,
+    "pixelStreamSha256": "d949317e340d5e298a13eeb875882ede277645189aee2aee9e31a4b174696583",
+    "sha256": "c8870c41dc002545f0636a7cc042d99479fbad51bf7cfd53fc8dca6f18c15cf2"
+  }
+}

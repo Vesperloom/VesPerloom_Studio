@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Vesperloom on Telegram
+    url: https://t.me/vesperloom7
+    about: Follow the project channel for release notes and seed studies. Report reproducible bugs using the issue forms.

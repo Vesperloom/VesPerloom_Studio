@@ -1,0 +1,162 @@
+[
+  {
+    "id": "study-01",
+    "title": "Copper Meridian",
+    "kind": "study",
+    "image": "/studies/study-01.png",
+    "thumb": "/studies/study-01-thumb.png",
+    "capsuleUrl": "/studies/study-01.json",
+    "schema": "vesperloom.capsule/v1",
+    "engineVersion": "0.1.0",
+    "model": {
+      "id": "strata-1",
+      "revision": "1.0.0",
+      "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+    },
+    "settings": {
+      "prompt": "An immense ringed planet above sweeping copper desert dunes, with amber light and a plum dusk sky.",
+      "model": "strata-1",
+      "aspect": "3:2",
+      "seed": 41928,
+      "steps": 24,
+      "drift": 0,
+      "width": 960,
+      "height": 640
+    },
+    "tags": {
+      "family": "dunes",
+      "palette": "copper",
+      "ringed": true,
+      "starry": false,
+      "largeBody": true
+    },
+    "parent": null,
+    "elapsedMs": 0,
+    "output": {
+      "width": 960,
+      "height": 640,
+      "pixelSha256": "66a8f761c495e75577f215daccd860165000deeeb2f74aa45028ee93a9d4030e",
+      "pngSha256": "d8024fbc7676c5c17d700122370380bfbb48e157cecb1ea3274a016c9b710dd3"
+    }
+  },
+  {
+    "id": "study-02",
+    "title": "Glacial Echo",
+    "kind": "study",
+    "image": "/studies/study-02.png",
+    "thumb": "/studies/study-02-thumb.png",
+    "capsuleUrl": "/studies/study-02.json",
+    "schema": "vesperloom.capsule/v1",
+    "engineVersion": "0.1.0",
+    "model": {
+      "id": "strata-1",
+      "revision": "1.0.0",
+      "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+    },
+    "settings": {
+      "prompt": "Glacial peaks rise beneath a pale mint moon, in a quiet alpine sky.",
+      "model": "strata-1",
+      "aspect": "3:2",
+      "seed": 371907,
+      "steps": 24,
+      "drift": 0,
+      "width": 960,
+      "height": 640
+    },
+    "tags": {
+      "family": "alpine",
+      "palette": "fjord",
+      "ringed": false,
+      "starry": false,
+      "largeBody": false
+    },
+    "parent": null,
+    "elapsedMs": 0,
+    "output": {
+      "width": 960,
+      "height": 640,
+      "pixelSha256": "778f4e43ba683459d1ca63fbc09df61d841117c8d74bcbe8125dbe8df8d4f60e",
+      "pngSha256": "76d12cb3db3d9f75ced8003645c181f0a7d6e1d26f39b58562c0358f5eaf9f59"
+    }
+  },
+  {
+    "id": "study-03",
+    "title": "Amethyst Tide",
+    "kind": "study",
+    "image": "/studies/study-03.png",
+    "thumb": "/studies/study-03-thumb.png",
+    "capsuleUrl": "/studies/study-03.json",
+    "schema": "vesperloom.capsule/v1",
+    "engineVersion": "0.1.0",
+    "model": {
+      "id": "strata-1",
+      "revision": "1.0.0",
+      "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+    },
+    "settings": {
+      "prompt": "A massive lilac moon over a violet tidal sea, under a scattering of stars.",
+      "model": "strata-1",
+      "aspect": "3:2",
+      "seed": 692104,
+      "steps": 24,
+      "drift": 0,
+      "width": 960,
+      "height": 640
+    },
+    "tags": {
+      "family": "tidal",
+      "palette": "iris",
+      "ringed": false,
+      "starry": true,
+      "largeBody": true
+    },
+    "parent": null,
+    "elapsedMs": 0,
+    "output": {
+      "width": 960,
+      "height": 640,
+      "pixelSha256": "a3c000842649c3a669c67e88346dc47819680439f5a94a6acafad0373728f42b",
+      "pngSha256": "230c14c1cb5caf562b753d1d5880919699c8c3940bc1bf8e145ddfa23bd360d0"
+    }
+  },
+  {
+    "id": "study-04",
+    "title": "Ochre Orbit",
+    "kind": "study",
+    "image": "/studies/study-04.png",
+    "thumb": "/studies/study-04-thumb.png",
+    "capsuleUrl": "/studies/study-04.json",
+    "schema": "vesperloom.capsule/v1",
+    "engineVersion": "0.1.0",
+    "model": {
+      "id": "strata-1",
+      "revision": "1.0.0",
+      "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+    },
+    "settings": {
+      "prompt": "A distant ringed giant above golden orbital craters and weathered basalt.",
+      "model": "strata-1",
+      "aspect": "3:2",
+      "seed": 174032,
+      "steps": 24,
+      "drift": 0,
+      "width": 960,
+      "height": 640
+    },
+    "tags": {
+      "family": "orbital",
+      "palette": "ochre",
+      "ringed": true,
+      "starry": true,
+      "largeBody": true
+    },
+    "parent": null,
+    "elapsedMs": 0,
+    "output": {
+      "width": 960,
+      "height": 640,
+      "pixelSha256": "c92204feb4a5b4850466dacc07872ad02aa2c1a3b296c93406a7d7f4b8410889",
+      "pngSha256": "69908ed124772d8a0429b9572d0b860922c7a878641e9ef7fde7f05df33763fd"
+    }
+  }
+]

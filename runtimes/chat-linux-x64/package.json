@@ -1,0 +1,17 @@
+{
+  "name": "vesperloom-local-chat-runtime",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Opt-in CPU-only GGUF adapter for glibc Linux x86-64. Install with npm ci --omit=optional --ignore-scripts.",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "dependencies": {
+    "@node-llama-cpp/linux-x64": "3.22.3",
+    "node-llama-cpp": "3.22.3"
+  }
+}

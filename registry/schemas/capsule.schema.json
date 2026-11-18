@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vesperloom replay capsule v1",
+  "type": "object", "required": ["schema", "engineVersion", "model", "settings", "output"],
+  "properties": {
+    "schema": {"const":"vesperloom.capsule/v1"}, "engineVersion":{"type":"string"},
+    "model":{"type":"object","required":["id","revision","fingerprint"],"properties":{"id":{"type":"string"},"revision":{"type":"string"},"fingerprint":{"$ref":"#/$defs/sha"}}},
+    "settings":{"type":"object","required":["prompt","model","aspect","seed","steps","drift","width","height"],"properties":{"prompt":{"type":"string","minLength":1,"maxLength":600},"model":{"type":"string"},"aspect":{"enum":["3:2","1:1","16:9","4:5"]},"seed":{"type":"integer","minimum":0,"maximum":4294967295},"steps":{"type":"integer","minimum":1,"maximum":50},"drift":{"type":"integer","minimum":0,"maximum":100},"width":{"type":"integer","minimum":1},"height":{"type":"integer","minimum":1}}},
+    "parent":{"type":["string","null"]}, "elapsedMs":{"type":"integer","minimum":0}, "tags":{"type":"object"},
+    "output":{"type":"object","required":["width","height","pixelSha256","pngSha256"],"properties":{"width":{"type":"integer"},"height":{"type":"integer"},"pixelSha256":{"$ref":"#/$defs/sha"},"pngSha256":{"$ref":"#/$defs/sha"}}}
+  },
+  "$defs":{"sha":{"type":"string","pattern":"^[0-9a-f]{64}$"}}
+}

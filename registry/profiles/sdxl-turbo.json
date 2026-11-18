@@ -1,0 +1,109 @@
+{
+  "id": "sdxl-turbo",
+  "name": "SDXL Turbo",
+  "publisher": "Stability AI",
+  "kind": "external",
+  "architecture": "sdxl",
+  "repo": "stabilityai/sdxl-turbo",
+  "revision": "71153311d3dbb46851df1931d3ca6e939de83304",
+  "variant": "fp16",
+  "license": "See upstream license",
+  "base": 512,
+  "steps": 2,
+  "maxSteps": 4,
+  "guidance": 0,
+  "vram": "8\u201312 GB",
+  "bytes": 6941187864,
+  "files": [
+    {
+      "path": "model_index.json",
+      "size": 685,
+      "gitBlob": "f857cf2f828fff2ee319b1a47e6ce820e8affb9d"
+    },
+    {
+      "path": "scheduler/scheduler_config.json",
+      "size": 459,
+      "gitBlob": "0359d7abb0b9c7b4a433be2db87cefea03c06ea5"
+    },
+    {
+      "path": "text_encoder/config.json",
+      "size": 565,
+      "gitBlob": "8e91c97936ad0b2c1356f03de8d47589b5232704"
+    },
+    {
+      "path": "text_encoder/model.fp16.safetensors",
+      "size": 246144152,
+      "sha256": "660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd"
+    },
+    {
+      "path": "text_encoder_2/config.json",
+      "size": 575,
+      "gitBlob": "f9e084535c55110233f44ccc6c7f9d0e1540f8be"
+    },
+    {
+      "path": "text_encoder_2/model.fp16.safetensors",
+      "size": 1389382176,
+      "sha256": "ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4"
+    },
+    {
+      "path": "tokenizer/merges.txt",
+      "size": 524619,
+      "gitBlob": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "size": 586,
+      "gitBlob": "1f467f3b057c46a21f88d9ab2f1070af9916c78c"
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "size": 704,
+      "gitBlob": "1bf819b6621086dc92428e2c9c8bbab39211fd55"
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "size": 1059962,
+      "gitBlob": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+    },
+    {
+      "path": "tokenizer_2/merges.txt",
+      "size": 524619,
+      "gitBlob": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+    },
+    {
+      "path": "tokenizer_2/special_tokens_map.json",
+      "size": 460,
+      "gitBlob": "ae0c5be6f35217e51c4c000fd325d8de0294e99c"
+    },
+    {
+      "path": "tokenizer_2/tokenizer_config.json",
+      "size": 855,
+      "gitBlob": "bd2abe19377557ff5771584921f9b65fa041fef0"
+    },
+    {
+      "path": "tokenizer_2/vocab.json",
+      "size": 1059962,
+      "gitBlob": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+    },
+    {
+      "path": "unet/config.json",
+      "size": 1776,
+      "gitBlob": "220d7ae3e59ce3484c7eeb47ef2ac9db5097e29a"
+    },
+    {
+      "path": "unet/diffusion_pytorch_model.fp16.safetensors",
+      "size": 5135149760,
+      "sha256": "48fa46161a745f48d4054df3fe13804ee255486bca893403b60373c188fd1bdb"
+    },
+    {
+      "path": "vae/config.json",
+      "size": 607,
+      "gitBlob": "ae14cf90e29b12134a53383691c98c73dee5d422"
+    },
+    {
+      "path": "vae/diffusion_pytorch_model.fp16.safetensors",
+      "size": 167335342,
+      "sha256": "02ee4bd18e5d16e7fe5fc5b85b4aefa2cba6db28897f674226c9d6ddd2f34f06"
+    }
+  ]
+}

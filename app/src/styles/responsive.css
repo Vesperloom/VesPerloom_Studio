@@ -1,0 +1,341 @@
+@media (min-width: 1650px) {
+  main {
+    padding: 37px 39px;
+  }
+  .studio-layout {
+    gap: 24px;
+    grid-template-columns: minmax(0, 1fr) 365px;
+  }
+  .parameters form {
+    padding: 20px 20px 0;
+  }
+  .generate-box {
+    margin: 18px -20px 0;
+    padding: 17px 20px;
+  }
+  .field {
+    margin-bottom: 19px;
+  }
+  .artboard {
+    max-height: 620px;
+  }
+}
+@media (max-width: 1190px) {
+  .sidebar {
+    width: 182px;
+  }
+  .workspace {
+    margin-left: 182px;
+  }
+  .brand-row {
+    padding: 0 17px;
+  }
+  .brand span {
+    font-size: 19px;
+  }
+  .brand img {
+    width: 29px;
+    height: 29px;
+  }
+  .studio-layout {
+    grid-template-columns: minmax(0, 1fr) 267px;
+    gap: 14px;
+  }
+  main {
+    padding: 25px 20px 17px;
+  }
+  .topbar {
+    padding: 0 20px;
+  }
+  .study-grid {
+    gap: 6px;
+  }
+  .study b {
+    font-size: 10px;
+  }
+  .parameters form {
+    padding: 13px 13px 0;
+  }
+  .generate-box {
+    margin-left: -13px;
+    margin-right: -13px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  .artboard {
+    aspect-ratio: 1.44;
+  }
+  .micro {
+    font-size: 8px;
+  }
+  .art-caption {
+    left: 17px;
+    bottom: 17px;
+  }
+}
+@media (max-width: 970px) and (min-width: 761px) {
+  .sidebar {
+    width: 70px;
+  }
+  .brand-row {
+    justify-content: center;
+    padding: 0;
+    height: 70px;
+  }
+  .brand span,
+  .nav-item span,
+  .nav-item i,
+  .nav-caption,
+  .side-bottom,
+  .brand-row .mobile-close {
+    display: none;
+  }
+  .sidebar nav {
+    padding: 18px 9px;
+  }
+  .nav-item {
+    justify-content: center;
+    padding: 13px 0;
+    margin: 4px 0;
+  }
+  .nav-item.selected i {
+    display: none;
+  }
+  .nav-item:nth-of-type(4) {
+    margin-top: 25px;
+  }
+  .workspace {
+    margin-left: 70px;
+  }
+  .studio-layout {
+    grid-template-columns: minmax(0, 1fr) 255px;
+  }
+  .studio-foot {
+    margin-top: 20px;
+  }
+  .toast {
+    left: calc(50% + 35px);
+  }
+}
+@media (max-width: 760px) {
+  .workspace {
+    margin-left: 0;
+  }
+  .sidebar {
+    width: 215px;
+    transform: translateX(-100%);
+    transition: transform 0.18s ease;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .nav-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    z-index: 8;
+  }
+  .menu-btn,
+  .mobile-close {
+    display: inline-flex;
+    color: #b9c3b9;
+  }
+  .mobile-close {
+    margin-left: auto;
+  }
+  .brand-row {
+    gap: 10px;
+  }
+  .desk-only {
+    display: none;
+  }
+  .topbar {
+    height: 52px;
+    padding: 0 16px;
+  }
+  .top-right {
+    gap: 10px;
+  }
+  .breadcrumbs {
+    gap: 8px;
+  }
+  .local-label,
+  .top-right .rule {
+    display: none;
+  }
+  main {
+    padding: 22px 15px 20px;
+  }
+  .page-head {
+    margin-bottom: 18px;
+  }
+  .page-head h1 {
+    font-size: 34px;
+  }
+  .page-head p {
+    font-size: 12px;
+  }
+  .guide-shortcut {
+    padding: 7px 9px;
+  }
+  .studio-layout {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .canvas-column {
+    display: contents;
+  }
+  .canvas {
+    order: 0;
+  }
+  .parameters,
+  .parameter-column {
+    order: 1;
+  }
+  .drift-card {
+    display: none;
+  }
+  .studies {
+    order: 2;
+    margin-top: 2px;
+  }
+  .artboard {
+    aspect-ratio: 1.6;
+  }
+  .parameters form {
+    padding: 15px 16px 0;
+  }
+  .parameters fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 13px;
+    align-items: start;
+  }
+  .parameters .field:nth-child(1),
+  .parameters .field:nth-child(2),
+  .advanced-fields,
+  .advanced-toggle {
+    grid-column: 1/-1;
+  }
+  .generate-box {
+    margin: 12px -16px 0;
+  }
+  .prompt-box textarea {
+    height: 57px;
+    min-height: 57px;
+  }
+  .art-caption strong {
+    font-size: 30px;
+  }
+  .studio-foot {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+  .toast {
+    left: 50%;
+    width: max-content;
+  }
+  .gallery-tools {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .guide-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .gallery-card section {
+    padding: 11px;
+  }
+  .gallery-card h3 {
+    font-size: 15px;
+  }
+  .gallery-card footer {
+    font-size: 8px;
+  }
+  .gallery-card .eyebrow {
+    letter-spacing: 0.7px;
+  }
+  .side-bottom {
+    padding-bottom: 25px;
+  }
+  .guide-icon {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 440px) {
+  .guide-shortcut {
+    display: none;
+  }
+  .page-head .secondary {
+    font-size: 10px;
+  }
+  .parameters fieldset {
+    display: block;
+  }
+  .ratios button {
+    padding: 8px 0;
+  }
+  .generate-box {
+    padding-bottom: 13px;
+  }
+  .art-caption strong {
+    font-size: 27px;
+  }
+  .art-caption small {
+    font-size: 7px;
+  }
+  .micro {
+    letter-spacing: 0.6px;
+  }
+  .plate-id {
+    font-size: 7px;
+    left: 12px;
+    top: 10px;
+  }
+  .study-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .study b {
+    font-size: 12px;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .studio-foot > span:last-child {
+    display: none;
+  }
+  .scrim {
+    padding: 12px;
+  }
+  .dialog {
+    padding: 15px;
+  }
+  .resolution {
+    font-size: 9px;
+  }
+  .tabs button {
+    padding: 5px 8px;
+  }
+  .count-tag {
+    font-size: 8px;
+  }
+  .search input {
+    width: 110px;
+  }
+  .page-head .eyebrow {
+    font-size: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "schema": "vesperloom.capsule/v1",
+  "engineVersion": "0.1.0",
+  "model": {
+    "id": "strata-1",
+    "revision": "1.0.0",
+    "fingerprint": "1bd9ea9719c5c7e0adee11c022ea940b2da605c5e1fa12ccaeadcbbe849642b2"
+  },
+  "settings": {
+    "prompt": "An immense ringed planet above sweeping copper desert dunes, with amber light and a plum dusk sky.",
+    "model": "strata-1",
+    "aspect": "3:2",
+    "seed": 41928,
+    "steps": 24,
+    "drift": 0,
+    "width": 960,
+    "height": 640
+  },
+  "tags": {
+    "family": "dunes",
+    "palette": "copper",
+    "ringed": true,
+    "starry": false,
+    "largeBody": true
+  },
+  "parent": null,
+  "elapsedMs": 0,
+  "output": {
+    "width": 960,
+    "height": 640,
+    "pixelSha256": "66a8f761c495e75577f215daccd860165000deeeb2f74aa45028ee93a9d4030e",
+    "pngSha256": "d8024fbc7676c5c17d700122370380bfbb48e157cecb1ea3274a016c9b710dd3"
+  }
+}
